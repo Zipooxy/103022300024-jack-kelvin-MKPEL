@@ -8,9 +8,8 @@ on:
 
 jobs:
 
-  # =============================================
+
   # 1. CONTINUOUS INTEGRATION (25 poin)
-  # =============================================
   continuous-integration:
     name: Continuous Integration
     runs-on: ubuntu-latest
@@ -29,9 +28,9 @@ jobs:
       - name: Build with Maven
         run: mvn -B compile --file pom.xml
 
-  # =============================================
+
   # 2. CONTINUOUS TESTING (25 poin)
-  # =============================================
+
   continuous-testing:
     name: Continuous Testing
     runs-on: ubuntu-latest
@@ -58,9 +57,7 @@ jobs:
           name: test-results
           path: target/surefire-reports/
 
-  # =============================================
   # 3. CONTINUOUS INSPECTION (35 poin)
-  # =============================================
   continuous-inspection:
     name: Continuous Inspection
     runs-on: ubuntu-latest
@@ -97,9 +94,9 @@ jobs:
             -Dsonar.host.url=https://sonarcloud.io \
             --file pom.xml
 
-  # =============================================
+
   # 4. CONTINUOUS DELIVERY / DEPLOY (15 poin)
-  # =============================================
+
   continuous-delivery:
     name: Continuous Delivery / Deploy
     runs-on: ubuntu-latest
