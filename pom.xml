@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ContohProjectMaven</groupId>
-  <artifactId>ContohProject</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <artifactId>ContohProjects</artifactId>
+  <version>3.5.7</version>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
